@@ -1,0 +1,437 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Lora', serif;
+}
+
+body{
+    padding: 0;
+    min-width: 360px;
+}
+
+:root{
+    --white-font: #f5f5f5;
+    --dark-font: #333;
+    --light-pink: #f5f0f1;
+}
+
+svg{
+    width: 25px;
+    height: 25px;
+    fill: var(--white-font);
+    opacity: .7;
+    transition: all cubic-bezier(0.17,-0.55, 0.35, 1.87) .3s;
+    margin-bottom: 3rem;
+}
+
+svg:hover{
+    opacity: 1;
+    transform: scale(1.19);
+}
+
+.body-container h2{
+    font-size: 2.2rem;
+    font-weight: 190;
+    width: 40%;
+}
+
+.jumbotron-slide{
+    height: 90vh;
+    max-height: 100%;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.carousel, .slide{
+    width: 100%;
+}
+
+.carousel-indicators{
+    bottom: max(-22%, -1rem);
+}
+
+.hero-section{
+    width: 100%;
+    min-width: 100%;
+    height: 34rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0 , 0.9);
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+
+.first--bg{
+    background-image: url("https://images.unsplash.com/photo-1611143669185-af224c5e3252?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fGZvb2QlMjBhbmQlMjByZXN0YXVyYW50fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
+}
+
+.second--bg{
+    background-image: url('https://media.istockphoto.com/photos/two-meat-plate-with-salad-leaves-and-summer-salad-in-waiters-hand-picture-id1160577908?b=1&k=20&m=1160577908&s=170667a&w=0&h=jGZUAWEVLqm-OtmAQRmGAfsyiwhcUBK6asX7_6qJffY=');
+}
+
+.third--bg{
+    background-image: url('https://media.istockphoto.com/photos/dinner-picture-id185109733?b=1&k=20&m=185109733&s=170667a&w=0&h=PpPlmIKM3Vdn9cRFAsEV9yigpqPJ_jJ1BXE7iiyyxiA=');   
+}
+.hero-section h2{
+    width: clamp(38%, 65%, 70%);
+    font-size: clamp(28%, 4.2vw, 10.6rem);
+    margin-top: .9rem;
+}
+
+.sm--icons{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 6.7rem;
+}
+
+/* FEATURES SECTION. */
+.features-section{
+    background-color: var(--white-font);
+    padding: 12% 8%;
+}
+
+.feature{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    /* grid-template-rows: ; */
+    gap: 7.5rem;
+    place-items: center;
+}
+
+.feature-img img{
+    height: 27rem;
+    aspect-ratio: 11/12;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    line-height: 1.5em;
+}
+
+.content h2{
+    width: 70%;
+    font-size: 3rem;
+    font-weight: 180;
+    line-height: 3.8rem;
+}
+
+.content p{
+    width: 70%;
+    font-size: 1rem;
+    font-family: sans-serif;
+    line-height: 2rem;
+    font-weight: 100;
+}
+
+.btn-button{
+    border: 1px solid #000;
+    padding: .8rem 1.2rem;
+    font-size: 1.02rem;
+    color: var(--dark-font);
+    cursor: pointer;
+    transition: all ease-in 0.2s;
+    font-family: sans-serif;
+    border-radius: 7px;
+}
+.btn:hover{
+    background-color: var(--dark-font);
+    color: var(--white-font);
+}
+
+/* DISHES CAROUSEL. */
+.our-dishes{
+    width: 100%;
+    min-width: 100%;
+    height: 100%;
+    background-color: var(--light-pink);
+    padding: 6% 4%;
+    place-self: center;
+}
+
+.our-dishes .header{
+    text-align: center;
+    margin: 1rem auto 4.2rem auto;
+    font-size: 3.2rem;
+    font-weight: 200;
+}
+
+.dish--slide{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 0.5fr;
+    gap: 4%;
+    justify-content: center;
+}
+
+
+.food-card{
+    display: flex;
+    width: 95%;
+    max-width: 100%;
+    max-height: 100%;
+    padding: 2.35rem;
+    flex-direction: column;
+    gap: .95rem;
+}
+
+.food-card img{
+    width: 100%;
+    aspect-ratio: 16/11;
+}
+
+.food-card-header{
+    display: flex;
+    justify-content: space-between;
+    gap: 50%;
+}
+
+.dish--slide a{
+    grid-column: 1/span 2;
+    justify-self: center;
+    margin-top: 10rem;
+}
+
+.our-dishes .carousel-indicators{
+    background-color: rgba(0, 0, 0 , 0.1);
+}
+
+.our-dishes .carousel-control-next-icon,
+.our-dishes .carousel-control-prev-icon{
+    background-color: rgba(0, 0, 0 , 0.4);
+    position: absolute;
+    width: .9rem;
+}
+
+.our-dishes .carousel-control-prev-icon{
+    left: 0;
+}
+
+.our-dishes .carousel-control-next-icon{
+    right: 0;
+}
+
+/* MISC GRIDS */
+.misc--grids{
+    padding: 10% 6%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-rows: repeat(3, 1fr);
+    place-items: center;
+    gap: 2rem;
+}
+
+.misc--grids h2{
+    font-size: 3rem;
+    width: 100%;
+    line-height: 1.2em;
+}
+
+.misc--grids img{
+    height: 26rem;
+    aspect-ratio: 9/9.5;
+    object-fit: cover;
+}
+
+.text{
+    width: 97%;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    line-height: 1.8em;
+    padding: 2rem 1.8rem;
+    align-self: left;
+    justify-content: center;
+    align-items: center;
+}
+
+.text p{
+    font-size: 1.1rem;
+    text-align: justify;
+    width: 100%;
+    font-family: sans-serif;
+}
+
+/* .shifted-right{
+    justify-self: flex-end;
+    width: 90%;
+}
+
+.shifted-left{
+    justify-self: flex-start;
+    width: 90%;
+} */
+
+/* BOOKINGS */
+
+.bookings{
+    background-color: var(--light-pink);
+    padding: 5% 3.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 3.4rem;
+}
+
+.bookings h2{
+    align-self: center;
+    font-size: 3.5rem;
+    font-weight: 350; 
+}
+.bookings p{
+    font-family: sans-serif;
+    font-size: min(1rem, 1.5rem);
+    width: clamp(35%, 62%, 75%);
+    line-height: 1.56em;
+}
+
+.bookings p, 
+    .misc--grids p,
+    .food-card p{
+        font-family: sans-serif;
+    }
+
+/* MEDIA QUERIES */
+
+@media(max-width: 952px){
+
+    .dish-slide{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 1fr);
+        justify-content: center;
+        align-items: center;
+        gap: 10%;
+        padding: 4rem;
+    }   
+    
+    .btn-button{
+        padding: .5rem 1rem;
+    }
+
+    .dish--slide .btn{
+        margin-top: -5.5rem;
+    }
+
+    .misc--grids{
+        padding: 10% 4%;
+    }
+
+    .misc--grids img{
+        height: min(21rem, 60vh);
+    }
+
+    
+    .bookings h2, 
+    .misc--grids h2,
+    .feature h2,
+    .our-dishes .header
+    {
+        font-size: 1.8rem;
+        width: 100%;
+    }
+
+    .food-card-header h2{
+        font-size: 1.3rem;
+    }
+
+    .dish--slide{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bookings p, 
+    .misc--grids p,
+    .food-card p{
+        font-size: 1rem;
+        text-align: left;
+    }
+  
+    .feature .content{
+        gap: .7rem;
+    }
+
+    .bookings{
+        padding: 5% 0;
+        text-align: center;
+    }
+
+    .misc--grids .first{
+        order: 1;
+    }
+
+    .misc--grids .second{
+        order: 2;
+    }
+
+    .misc--grids .third{
+        order: 3;
+    }
+
+    .misc--grids .fourth{
+        order: 4;
+    }
+
+    .misc--grids .fifth{
+        order: 5;
+    }
+
+    .misc--grids .sixth{
+        order: 6;
+    }
+
+
+}
+
+@media(max-width: 460px){
+    .misc--grids{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .misc--grids img{
+        height: 60vh;
+        max-width: 98%;
+        aspect-ratio: 1/1;
+        justify-self: center;
+        margin: auto;
+    }
+
+    .shifted-right, .shifted-left{
+        justify-self: center;
+        width: 90%;
+    }
+}
+
+@media(max-width: 400px){
+    .hero-section{
+        height: 33rem;
+        margin-top: 0;
+    }
+
+    .feature-img img{
+        width: 88%;
+        aspect-ratio: 1/1;
+    }
+
+    .bookings p{
+        font-size: 0.85rem;
+    }
+}

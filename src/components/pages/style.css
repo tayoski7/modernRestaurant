@@ -1,0 +1,473 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Roboto Slab', serif;
+}
+/*Base styles*/
+h1{
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.aboutPara{
+    color: #9da3a9;
+    font-size: 1.1rem;
+}
+.stripper{
+    /* border: 1px solid blue; */
+    max-width: 90%;
+    height: auto;
+    margin:  0 auto;
+}
+img{
+    max-width: 100%;
+    min-height: 100%;
+}
+
+/*Utility classes*/
+.text-center{
+    text-align: center;
+} 
+.txt-xl{
+    font-size: 3.0rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+
+}
+.txt-lg{
+    font-size: 1.7rem;
+    text-transform: capitalize;
+}
+.txt-md{
+    font-size: 1.3rem;
+    text-align: center;
+}
+.txt-sm{
+    font-size: 1.0rem;
+    text-align: center;
+}
+.grid-reversed :first-child {
+    order: 2;
+  }
+/* 
+/*Padding X-axis*/
+.px-lg{
+    padding: 0 40px;
+}
+.px-md{
+    padding: 0 30px;
+}
+.px-sm{
+    padding: 0 20px;
+}
+
+/*Padding Y-axis*/
+.py-lg{
+    padding: 40px 0;
+}
+.py-md{
+    padding: 30px 0;
+}
+.py-sm{
+    padding: 20px 0;
+}
+
+/*Buttons*/
+.aboutButton{
+    border: 1px solid black;
+    padding: 13px 27px;
+    font-size: 1rem;
+    color:#404344;
+    cursor: pointer;
+    display: inline-block;
+    background: none;
+    text-decoration: none;
+    text-align: center;
+    
+}
+button:hover{
+    background-color: #1F2120;
+    color: white;
+    transition: all 0.5s;
+}
+/*About components styles*/
+.main-conatiner{
+/* border: 1px solid red; */
+width: 100vw;
+width: 100%;
+/* height: 100vh; */
+position: relative;
+}
+.main-conatiner .container2{ 
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.527),rgba(0,0,0,0.5)), url(./images/Hero.jpg);
+    background-position: center;
+    background-size: cover; 
+    background-repeat: no-repeat;
+    position: relative;
+    /* border: 1px solid blue; */
+}
+
+.main-conatiner .container2 .hero{
+    /* border: 1px solid white; */
+    width: 100%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 60%;
+    left: 50%;
+    overflow-y: hidden;
+ 
+
+}
+.container2 .hero h1{
+     font-size: 7rem;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+    color: white;
+    /* border: 1px solid red; */
+    overflow: hidden;
+  
+} 
+/*This is the strip container*/
+.stripper{
+    /* border: 1px solid blue; */
+    max-width: 90%;
+    margin: auto;
+}
+.grid-container{
+    /* border: 1px solid green; */
+    width: 100%;
+    margin-top:150px; 
+}
+.grid-container .grid-row{
+    /* border: 1px solid brown; */
+    width: 100%;
+}
+.grid-container .grid-row .grid-col2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    gap: 5rem;
+   
+}
+.grid-container .grid-row .grid-col2 .grid-img{
+    /* border: 1px solid green; */
+    overflow-y: hidden;
+    max-width: 100%;
+    height: auto;
+    
+}
+.grid-container .grid-row .grid-col2 .grid-img img{
+    width: 100%;
+    height: 38rem;
+    object-fit: fill;
+    
+}
+.grid-container .grid-row .grid-col2 .grid-content{
+    /* border: 1px solid black; */
+    margin: 25px auto;
+    width: 100%;
+    max-height: 500px;
+}
+.grid-container .grid-row .grid-col2 .grid-content h3{
+    /* border: 1px solid red; */
+    max-width: 450px;
+    width: 100%;
+    font-size: 3.5rem;
+    font-weight: 400;
+    padding: 70px 45px;
+    color:#1F2120;
+    overflow: hidden;
+}
+.grid-container .grid-row .grid-col2 .grid-content p{
+    /* border: 1px solid red; */
+    max-width: 490px;
+    width: 100%;
+    font-size: 1.0rem;
+    line-height: 1.4;
+    padding: 0 45px;
+    font-weight: 400;
+    color:#404344;
+}
+
+/*Second grid */
+.stripper .grid-container2{
+    width: 100%;
+    margin-bottom:150px; 
+    margin-top: -70px ;
+    /* border: 1px solid black; */
+}
+.stripper .grid-container2 .grid-row2{
+    /* border: 1px solid brown; */
+    width: 100%;
+}
+.stripper .grid-container2 .grid-row2 .grid-col22{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    gap: 5rem;
+  
+}
+
+.stripper .grid-container2 .grid-row2 .grid-col22 .grid-img2{
+    background-image: url(./images/restuarant.jpg);
+    background-position:left center;
+    background-size: cover;
+    max-width: 85%;
+    height: 38rem;
+    height: 100%;
+    margin-left: 55px;
+    overflow-y: hidden;
+   
+}
+
+.stripper .grid-container2 .grid-row2 .grid-col22 .grid-content2{
+    /* border: 1px solid green; */
+    max-width: 100%;
+    width: 100%;
+    padding: 100px 0;
+}
+.stripper .grid-container2 .grid-row2 .grid-col22 .grid-content2 .content1{
+    /* border: 1px solid red; */
+    margin-top: 150px;
+    width: 530px;
+    max-width: 100%;
+}
+.stripper .grid-container2 .grid-row2 .grid-col22 .grid-content2 .content1 p{
+    font-size: 1.0rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color:#404344;
+    
+ 
+}
+.stripper .grid-container2 .grid-row2 .grid-col22 .grid-content2 .content2{
+    /* border: 1px solid red; */
+    margin-top: 50px;
+    max-width: 100%;
+    width: 500px;
+}
+.stripper .grid-container2 .grid-row2 .grid-col22 .grid-content2 .content2 p{
+    font-size: 1.0rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color:#404344;
+}
+
+
+/*Book Section*/
+
+.main-conatiner .book-container{
+    /* border: 1px solid green; */
+    width: 100%;
+    height: 85vh;
+    background: #eeeeee;
+    position: relative;
+    
+}
+.main-conatiner .book-container .book-wrapper{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 55%;
+    left: 50%;
+    text-align: center;
+}
+
+.main-conatiner .book-container .book-wrapper .book-title h1{
+    /* border: 1px solid green; */
+    padding: 20px 0;
+   font-size: 4rem;
+   font-weight: 400;
+   margin-bottom: 40px;
+   color: #404344;
+}
+
+.main-conatiner .book-container .book-wrapper .book-content{
+    /* border:1px solid red; */
+    width: 400px;
+    max-width: 100%;
+    margin-bottom: 60px;
+}
+
+.main-conatiner .book-container .book-wrapper .book-content p{
+    font-size: 1.0rem;
+    color: #404344;
+   
+}
+
+
+/*Media Queries*/
+@media (max-width: 1200px){
+    .main-conatiner .container2{
+        height: 70vh;
+    }
+    .grid-container .grid-row .grid-col2 .grid-content h3{
+        /* border: 1px solid red; */
+        width: 85%;
+        padding: 10px 45px;
+    }
+    .stripper .grid-container2 .grid-row2 .grid-col22 .grid-content2 .content2{
+        margin-top: 70px;
+    }
+    .stripper .grid-container2{
+        margin-bottom: 90px;
+    }
+    .main-conatiner .book-container .book-wrapper{
+        width: 330px;
+        /* border: 1px solid black; */
+    }
+    .main-conatiner .book-container .book-wrapper .book-title h1{
+        margin-bottom: 5px;  
+    }
+    .main-conatiner .book-container .book-wrapper .book-content{
+        margin-bottom: 50px;
+    }
+    
+}
+
+
+@media (max-width:980px) {
+
+    .stripper{
+        max-width: 95%;
+        margin: auto auto;
+    }
+        .container2{
+        height: 50vh;
+        height: 100%;
+    }
+    .container2 .hero h1{
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    .grid-container{
+        margin-top: 30px;
+    }
+
+    .grid-container .grid-row .grid-col2 .grid-content{
+        /* border: 1px solid green; */
+        margin-bottom: -60px;
+    }
+
+    .grid-container .grid-row .grid-col2 .grid-content h3{
+        /* border: 1px solid green; */
+        font-size:1.7rem;
+        margin-bottom: 5px;
+        padding: 0px 15px;
+    }
+    .grid-container .grid-row .grid-col2 .grid-content p{
+        max-width: 100%;
+        padding: 15px 15px;
+        font-size: 0.93rem;
+    }
+
+    .grid-container .grid-row .grid-col2 .grid-img img{
+        max-width: 95%;
+        margin:  0 15px;
+        height: 30rem;
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+        
+    }
+
+    .stripper .grid-container2 .grid-row2 .grid-col22 .grid-content2{
+        padding: 0px;
+        /* border: 1px solid blue; */
+        margin-top:10px;
+        overflow-y: hidden;
+    }
+    .stripper .grid-container2 .grid-row2 .grid-col22 .grid-content2 .content1{
+        margin-top: 100px;
+        /* border: 1px solid green; */
+        width: 100%;
+    }
+    .stripper .grid-container2 .grid-row2 .grid-col22 .grid-content2 .content1 p{
+        font-size: 0.93rem;
+        padding: 0 15px;
+    }
+
+    .stripper .grid-container2 .grid-row2 .grid-col22 .grid-content2 .content2{
+        width: 100%;
+        max-width: 100%;
+        /* border: 1px solid red; */ 
+    }
+    .stripper .grid-container2 .grid-row2 .grid-col22 .grid-content2 .content2 p{
+        font-size: 0.93rem;
+        padding: 0 15px;
+        margin: auto;
+    }
+
+    .stripper .grid-container2 .grid-row2 .grid-col22 .grid-img2{
+        max-width: 95%;
+        width: 100%;
+        height: 45rem;
+        margin:  0 15px;
+      
+    }
+
+    .stripper .grid-container2 .grid-row2 .grid-col22{
+        gap: 2rem;
+    }
+
+    .main-conatiner .book-container .book-wrapper{
+        margin-top: -20px;
+        width: 100%;
+        /* border: 1px solid black; */
+    }
+    .main-conatiner .book-container .book-wrapper .book-title h1{
+        margin-bottom: 5px;  
+        width: 100%;
+        font-size: 1.7rem;
+    }
+    .main-conatiner .book-container .book-wrapper .book-content{
+        margin-bottom: 50px;
+        width: 100%;
+        padding: 2px;
+    }
+    
+    .main-conatiner .book-container .book-wrapper .book-content p{
+        padding:0 10px;
+        /* border: 1px solid red; */
+    }
+    .main-conatiner .book-container{
+        height: 70vh;
+    }
+
+    .grid-container .grid-row .grid-col2{
+        display: grid;
+        grid-template-columns: 1fr;
+       
+    }
+    .grid-container .grid-row .grid-col2 .grid-content{
+        grid-row:1/2;
+    }
+    .stripper .grid-container2 .grid-row2 .grid-col22{
+        display: grid;
+        grid-template-columns: 1fr;
+       
+    }
+
+} 
+
+@media (max-width:450px){
+    .container2{
+        height: 50vh;
+    }
+    .stripper{
+        max-width: 90%;
+        margin: 0 auto;
+    }
+    .stripper .grid-container2 .grid-row2 .grid-col22 .grid-img2{
+        /* border: 1px solid red; */
+        max-width: 95%;
+        width: 100%;
+        height: 25rem;
+        margin:  0 15px;
+    }
+    .main-conatiner .book-container .book-wrapper{
+        margin-top: -70px;
+    }
+}

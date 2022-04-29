@@ -1,0 +1,14 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.lnk {
+    letter-spacing: 0.1rem;
+}
+
+.lnk:active,
+.lnk:hover {
+    border-bottom: 0.1rem solid rgb(245, 242, 242);
+    word-spacing: 0.2rem;
+}
